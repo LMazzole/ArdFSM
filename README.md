@@ -11,8 +11,6 @@ Based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki
 
 ## HowTo use Doxygen in VSCODE
 
-Check out the generated HTML-File in doc.
-
 ## Install Doxygen
 [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html) 
 1. Download a binary distribution at [Doxygen Download](http://www.doxygen.nl/download.html) 
@@ -29,6 +27,11 @@ Check out the generated HTML-File in doc.
 4. When Doxygen has finished click on Show HTML output.  
 
 [Source: [PALISADE](https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows) ]
+
+## Doxygen and GitHub-Pages
+
+[ToDo]
+
 ## Usefull tips 
 ### Extension for VSCode
 [Doxygen Documentation Generator](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
