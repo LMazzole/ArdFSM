@@ -95,7 +95,6 @@ $(document).ready(function(){initNavTree('md__v_1__git__ard_f_s_m__r_e_a_d_m_e.h
 <h2>Documentation with Doxygen</h2>
 <p><a href="https://lmazzole.github.io/ArdFSM/">View the GitHub-Page for Documentation</a></p>
 <h2>HowTo use Doxygen in VSCODE</h2>
-<p>Check out the generated HTML-File in doc.</p>
 <h2>Install Doxygen</h2>
 <p><a href="http://www.doxygen.nl/manual/install.html">Doxygen Installation manual</a></p><ol type="1">
 <li>Download a binary distribution at <a href="http://www.doxygen.nl/download.html">Doxygen Download</a></li>
@@ -105,12 +104,23 @@ $(document).ready(function(){initNavTree('md__v_1__git__ard_f_s_m__r_e_a_d_m_e.h
 <p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
 <h2>How to run doxygen</h2>
 <ol type="1">
-<li>Start the doxywizard (Desktop App)</li>
-<li>Click on Flle-&gt;Open and choose the Doxyfile in the Folder Doc</li>
+<li>Start doxywizard (Desktop App)</li>
+<li>Click on File-&gt;Open and choose Doxyfile in the Folder doxygen</li>
 <li>In Doxywizard switch to the Tab Run and Click on Run doxygen</li>
 <li>When Doxygen has finished click on Show HTML output.</li>
 </ol>
-<p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ] </p><h2>Usefull tips</h2>
+<p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
+<h2>Doxygen and GitHub-Pages</h2>
+<ol type="1">
+<li>Generate your doxyfile direct into /docs.</li>
+<li>You need to add an .nojekll file in ./docs.</li>
+</ol>
+<p>This is necessary because Jekyll considers Directories that start with underscores to be special resources and does not copy them to the final site. <a href="https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/">Bypassing Jekyll on GitHub Pages</a></p>
+<ol type="1">
+<li>Under Settings -&gt; GitHub Pages -&gt; Source choose master branche /docs folder.</li>
+<li>Save</li>
+</ol>
+<h2>Usefull tips</h2>
 <h3>Extension for VSCode</h3>
 <p><a href="https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen">Doxygen Documentation Generator</a></p>
 <p>Change the order in config-options. It's important that "author" appears befor "brief" because of an parse error in doxygen.</p>

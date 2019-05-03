@@ -22,6 +22,7 @@
 /**
  * @brief Contains the FSM for the Door
  * 
+ * @image html DoorCtrl.png width=500
  */
 class DoorCtrl {
     //=====PUBLIC====================================================================================
