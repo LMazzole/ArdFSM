@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.15"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Simple Arduino FSM: SmartFactoryVehicle</title>
+<title>Simple Arduino FSM: Arduino FSM</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -86,10 +86,36 @@ $(document).ready(function(){initNavTree('md__v_1__git__ard_f_s_m__r_e_a_d_m_e.h
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">SmartFactoryVehicle </div>  </div>
+<div class="title">Arduino FSM </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>A Lego-Based Autonomous Logistics Vehicle </p>
+<div class="textblock"><p>This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested.</p>
+<p>Based on this Wiki-Article: <a href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite-state_machine</a> and an example from R.Bonderer (HSR)</p>
+<img src="https://raw.githubusercontent.com/LMazzole/ArdFSM/master/doxygen/Fsm_Moore_model_door_control.png" height="400" alt="" class="inline"/>
+<h2>Documentation with Doxygen</h2>
+<p><a href="https://lmazzole.github.io/ArdFSM/">View the GitHub-Page for Documentation</a></p>
+<h2>HowTo use Doxygen in VSCODE</h2>
+<p>Check out the generated HTML-File in doc.</p>
+<h2>Install Doxygen</h2>
+<p><a href="http://www.doxygen.nl/manual/install.html">Doxygen Installation manual</a></p><ol type="1">
+<li>Download a binary distribution at <a href="http://www.doxygen.nl/download.html">Doxygen Download</a></li>
+<li>Select "Full Installation" (default option)</li>
+<li>Add "c:/doxygen/bin" (or whatever path was used during the installation) to the System PATH variable to run "doxygen" without providing the full path to the binary.</li>
+</ol>
+<p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
+<h2>How to run doxygen</h2>
+<ol type="1">
+<li>Start the doxywizard (Desktop App)</li>
+<li>Click on Flle-&gt;Open and choose the Doxyfile in the Folder Doc</li>
+<li>In Doxywizard switch to the Tab Run and Click on Run doxygen</li>
+<li>When Doxygen has finished click on Show HTML output.</li>
+</ol>
+<p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ] </p><h2>Usefull tips</h2>
+<h3>Extension for VSCode</h3>
+<p><a href="https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen">Doxygen Documentation Generator</a></p>
+<p>Change the order in config-options. It's important that "author" appears befor "brief" because of an parse error in doxygen.</p>
+<h3>How to Write Doxygen Doc Comments</h3>
+<p><a href="https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments">How to Write Doxygen Doc Comments</a> </p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
