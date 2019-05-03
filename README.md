@@ -3,9 +3,14 @@
 This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested.  
 Based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine) and an example from R.Bonderer (HSR)
 
-<img src="https://raw.githubusercontent.com/LMazzole/ArdFSM/master/doc/Fsm_Moore_model_door_control.png" height="400" />
+<img src="https://raw.githubusercontent.com/LMazzole/ArdFSM/master/doxygen/Fsm_Moore_model_door_control.png" height="400" />
+
+## Documentation with Doxygen
+
+[View the GitHub-Page for Documentation](https://lmazzole.github.io/ArdFSM/)
 
 ## HowTo use Doxygen in VSCODE
+
 Check out the generated HTML-File in doc.
 
 ## Install Doxygen
