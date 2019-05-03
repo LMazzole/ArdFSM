@@ -21,16 +21,21 @@ Based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki
 
 ## How to run doxygen
 
-1. Start the doxywizard (Desktop App) 
-2. Click on Flle->Open and choose the Doxyfile in the Folder Doc 
+1. Start doxywizard (Desktop App) 
+2. Click on File->Open and choose Doxyfile in the Folder doxygen 
 3. In Doxywizard switch to the Tab Run and Click on Run doxygen
 4. When Doxygen has finished click on Show HTML output.  
 
 [Source: [PALISADE](https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows) ]
 
 ## Doxygen and GitHub-Pages
+1. Generate your doxyfile direct into /docs.  
+2. You need to add an .nojekll file in ./docs.  
+This is necessary because Jekyll considers Directories that start with underscores to be special resources and does not copy them to the final site.
+[Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)
 
-[ToDo]
+3. Under Settings -> GitHub Pages -> Source choose master branche /docs folder.
+4. Save
 
 ## Usefull tips 
 ### Extension for VSCode
