@@ -24,7 +24,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Simple Arduino FSM", "index.html", [
-    [ "SmartFactoryVehicle", "md__v_1__git__ard_f_s_m__r_e_a_d_m_e.html", null ],
+    [ "Arduino FSM", "md__v_1__git__ard_f_s_m__r_e_a_d_m_e.html", null ],
     [ "Todo List", "todo.html", null ],
     [ "Bug List", "bug.html", null ],
     [ "Classes", "annotated.html", [
