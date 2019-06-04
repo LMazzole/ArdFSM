@@ -89,20 +89,22 @@ $(document).ready(function(){initNavTree('md__v_1__git__ard_f_s_m__r_e_a_d_m_e.h
 <div class="title">Arduino FSM </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p>This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested.</p>
-<p>Based on this Wiki-Article: <a href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite-state_machine</a> and an example from R.Bonderer (HSR)</p>
-<img src="https://raw.githubusercontent.com/LMazzole/ArdFSM/master/doxygen/Fsm_Moore_model_door_control.png" height="400" alt="" class="inline"/>
+<div class="textblock"><p>This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested in C++.</p>
+<p>It's based on this Wiki-Article: <a href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite-state_machine</a> and an example by R.Bonderer (HSR) from <em>Embedded Software Engineering</em>.</p>
+<img src="./doxygen/Fsm_Moore_model_door_control.png" height="400" alt="" class="inline"/>
 <h2>Documentation with Doxygen</h2>
-<p><a href="https://lmazzole.github.io/ArdFSM/">View the GitHub-Page for Documentation</a></p>
-<h2>HowTo use Doxygen in VSCODE</h2>
-<h2>Install Doxygen</h2>
-<p><a href="http://www.doxygen.nl/manual/install.html">Doxygen Installation manual</a></p><ol type="1">
+<p>View the GitHub-Page for the <a href="https://lmazzole.github.io/ArdFSM/">source-code documentation</a></p>
+<h3>What is Doxygen?</h3>
+<p>Doxygen is <a href="https://github.com/doxygen/doxygen">Open-Source</a> documentation generator. It extracts sourcecode-documentation directly from annoted Code. Doxygen supports a lot of popular programmin languages such as C++, C , Java, Python, etc.</p>
+<p>For Doxygen to detect the documentation, special comments are neede. one Example is shown below, but there are many more possible variants as shown <a href="http://www.doxygen.nl/manual/docblocks.html">here</a>. </p><div class="fragment"><div class="line">/**</div><div class="line"> * @brief A short one line description</div><div class="line"> *</div><div class="line"> * &lt;Longer description&gt;</div><div class="line"> * &lt;May span multiple lines or paragraphs as needed&gt;</div><div class="line"> *</div><div class="line"> * @param  Description of method&#39;s or function&#39;s input parameter</div><div class="line"> * @param  ...</div><div class="line"> * @return Description of the return value</div><div class="line"> */</div></div><!-- fragment --><p> The main benefit of doxygen is, that the documentatiion can be written directly in the sourcode it's self and thus is easy to keep up to date.</p>
+<h3>HowTo Install Doxygen for Code-documentation</h3>
+<p>Detailed instructions how to install Doxygen can be found in the <a href="http://www.doxygen.nl/manual/install.html">Doxygen Installation manual</a>.</p><ol type="1">
 <li>Download a binary distribution at <a href="http://www.doxygen.nl/download.html">Doxygen Download</a></li>
 <li>Select "Full Installation" (default option)</li>
 <li>Add "c:/doxygen/bin" (or whatever path was used during the installation) to the System PATH variable to run "doxygen" without providing the full path to the binary.</li>
 </ol>
 <p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
-<h2>How to run doxygen</h2>
+<h3>How to run doxygen</h3>
 <ol type="1">
 <li>Start doxywizard (Desktop App)</li>
 <li>Click on File-&gt;Open and choose Doxyfile in the Folder doxygen</li>
@@ -110,7 +112,7 @@ $(document).ready(function(){initNavTree('md__v_1__git__ard_f_s_m__r_e_a_d_m_e.h
 <li>When Doxygen has finished click on Show HTML output.</li>
 </ol>
 <p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
-<h2>Doxygen and GitHub-Pages</h2>
+<h3>Doxygen and GitHub-Pages</h3>
 <ol type="1">
 <li>Generate your doxyfile direct into /docs.</li>
 <li>You need to add an .nojekll file in ./docs.</li>
