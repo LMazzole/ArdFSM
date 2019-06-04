@@ -16,9 +16,7 @@ It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org
    - [HowTo install .dot and graphix](#howto-install-dot-and-graphix)
    - [HowTo run Doxygen](#howto-run-doxygen)
    - [Doxygen and GitHub-Pages](#doxygen-and-github-pages)
-- [Usefull tips](#usefull-tips)
-   - [Extension for VSCode](#extension-for-vscode)
-   - [How to Write Doxygen Doc Comments](#how-to-write-doxygen-doc-comments)
+   - [Doxygen and  VSCode](#doxygen-and--vscode)
 
 ## Documentation with Doxygen
 
@@ -33,7 +31,7 @@ View the GitHub-Page for the [source-code documentation](https://lmazzole.github
 ## What is Doxygen?
 Doxygen is [Open-Source](https://github.com/doxygen/doxygen) documentation generator. It extracts sourcecode-documentation directly from annoted Code. Doxygen supports a lot of popular programmin languages such as C++, C , Java, Python, etc.
 
-For Doxygen to detect the documentation, special comments are needed. One example is shown below, but there are many more possible variants as shown [here](http://www.doxygen.nl/manual/docblocks.html).
+For Doxygen to detect the documentation, special comments are needed. One example is shown below, but there are many more possible variants as shown in the [Doxygen Documentation](http://www.doxygen.nl/manual/docblocks.html).
 ```
 /**
  * @brief A short one line description
@@ -46,7 +44,12 @@ For Doxygen to detect the documentation, special comments are needed. One exampl
  * @return Description of the return value
  */
 ```
-The main benefit of doxygen is, that the documentatiion can be written directly in the sourcode its self and thus is easy to keep up to date. It can also automatically generate the visualization from relations between classes, object, inheritance and other deoendencys
+[Source: [Wikipedia: Doxygen](https://en.wikipedia.org/wiki/Doxygen)]
+The main benefit of doxygen is, that the documentatiion can be written directly in the sourcode it self and thus is easy to keep up to date. It can also automatically generate the visualization from relations between classes, object, inheritance and other dependencys.
+
+Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  Output-Files.
+
+If you need more Information about Doxygen-Comments check out: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
 
 ### HowTo install Doxygen 
 Detailed instructions how to install Doxygen can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
@@ -56,9 +59,10 @@ Detailed instructions how to install Doxygen can be found in the [Doxygen Instal
 
 [Source: [PALISADE](https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows) ]
 
-### HowTo Install .dot and graphix
+### HowTo install .dot and graphix
 If you like to draw class diagrams, collaboration  diagrams,overall class hierarchy and dependency graphs you need to install the GraphViz package.
 You can download a stable Windows release on the [Graphviz Website](<https://graphviz.gitlab.io/_pages/Download/Download_windows.html>).
+
 1. Download the installer for Windows
 2. The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: GraphvizX.XX → Graphviz2.38)
 3. Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below command:
@@ -83,22 +87,38 @@ If you like to generate Diagrams make sure, that in the Tab Wizard/Diagrams the 
 You can use doxygen also only in console. Check the [Doxygen-Documentation](http://www.doxygen.nl/manual/index.html) if you need to know more.
 
 ### Doxygen and GitHub-Pages
-1. Generate your doxyfile direct into /docs.  
+1. Generate your doxyfile direct into ./docs.  
 2. You need to add an .nojekll file in ./docs.  
-This is necessary because Jekyll considers Directories that start with underscores to be special resources and does not copy them to the final site.
-[Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)
+This is necessary because Jekyll considers Directories that start with underscores to be special resources and does not copy them to the final site. [Source: [Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)]
 
-3. Under Settings -> GitHub Pages -> Source choose master branche /docs folder.
+3. Under Settings -> GitHub Pages -> Source choose master branche ./docs folder.
 4. Save
 
-## Usefull tips 
-### Extension for VSCode
-[Doxygen Documentation Generator](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen)
+### Doxygen and  VSCode
 
-Change the order in config-options. It's important that "author" appears befor "brief" because of an  parse error in doxygen.
+There's a usefull extension for VSCode, called: [Doxygen Documentation Generator](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen).
 
-### How to Write Doxygen Doc Comments
-[How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments)
+You can personalize the apperance of the Comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -> Edit in settings.json
+It looks something like this:
+
+>   "doxdocgen.generic.returnTemplate": "@return {type} - ",
+> ​   "doxdocgen.generic.paramTemplate": "@param {param} - ",
+> ​   "doxdocgen.file.versionTag": "@version 1.0 - Description - {author} - {date}",
+> ​   "doxdocgen.file.fileOrder": [
+> ​       "file",
+> ​       "brief",
+> ​       "empty",
+> ​       "author",
+> ​       "empty",
+> ​       "version",
+> ​       "empty",
+> ​       "date",
+> ​       "copyright",
+> ​       "empty",
+> ​       "custom"
+> ​    ],
+
+
 
 
 
