@@ -8,18 +8,20 @@ It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org
 ## Table of Content
 <!-- TOC Generated with https://magnetikonline.github.io/markdown-toc-generate/ -->
 
+- [Documentation](#documentation)
+   - [Software](#software)
+      - [Dependency Graph](#dependency-graph)
+      - [Collaboration Diagram](#collaboration-diagram)
 - [Documentation with Doxygen](#documentation-with-doxygen)
-   - [Dependency Graph](#dependency-graph)
-   - [Collaboration Diagram](#collaboration-diagram)
-- [What is Doxygen?](#what-is-doxygen)
-   - [HowTo install Doxygen](#howto-install-doxygen)
-   - [HowTo install .dot and graphix](#howto-install-dot-and-graphix)
-   - [HowTo run Doxygen](#howto-run-doxygen)
-   - [Doxygen and GitHub-Pages](#doxygen-and-github-pages)
-   - [Doxygen and  VSCode](#doxygen-and--vscode)
+   - [What is Doxygen?](#what-is-doxygen)
+      - [HowTo install Doxygen](#howto-install-doxygen)
+      - [HowTo install .dot and graphix](#howto-install-dot-and-graphix)
+      - [HowTo run Doxygen](#howto-run-doxygen)
+      - [Doxygen and GitHub-Pages](#doxygen-and-github-pages)
+      - [Doxygen and  VSCode](#doxygen-and--vscode)
 
-## Documentation with Doxygen
-
+# Documentation
+## Software
 View the GitHub-Page for the [source-code documentation](https://lmazzole.github.io/ArdFSM/)
 
 ### Dependency Graph
@@ -28,6 +30,7 @@ View the GitHub-Page for the [source-code documentation](https://lmazzole.github
 ### Collaboration Diagram
 <img src="./docs/class_door_ctrl__coll__graph.png" height="200" />
 
+# Documentation with Doxygen
 ## What is Doxygen?
 Doxygen is [Open-Source](https://github.com/doxygen/doxygen) documentation generator. It extracts sourcecode-documentation directly from annoted Code. Doxygen supports a lot of popular programmin languages such as C++, C , Java, Python, etc.
 
@@ -101,22 +104,22 @@ There's a usefull extension for VSCode, called: [Doxygen Documentation Generator
 You can personalize the apperance of the Comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -> Edit in settings.json
 It looks something like this:
 
->   "doxdocgen.generic.returnTemplate": "@return {type} - ",
-> ​   "doxdocgen.generic.paramTemplate": "@param {param} - ",
-> ​   "doxdocgen.file.versionTag": "@version 1.0 - Description - {author} - {date}",
-> ​   "doxdocgen.file.fileOrder": [
-> ​       "file",
-> ​       "brief",
-> ​       "empty",
-> ​       "author",
-> ​       "empty",
-> ​       "version",
-> ​       "empty",
-> ​       "date",
-> ​       "copyright",
-> ​       "empty",
-> ​       "custom"
-> ​    ],
+>   "doxdocgen.generic.returnTemplate": "@return {type} - ",  
+> ​   "doxdocgen.generic.paramTemplate": "@param {param} - ",  
+> ​   "doxdocgen.file.versionTag": "@version 1.0 - Description - {author} - {date}",  
+> ​   "doxdocgen.file.fileOrder": [  
+> ​       "file",  
+> ​       "brief",  
+> ​       "empty",  
+> ​       "author",  
+> ​       "empty",  
+> ​       "version",  
+> ​       "empty",  
+> ​       "date",  
+> ​       "copyright",  
+> ​       "empty",  
+> ​       "custom"  
+> ​    ],  
 
 
 
