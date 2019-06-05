@@ -47,7 +47,7 @@ For Doxygen to detect the documentation, special comments are needed. One exampl
  * @return Description of the return value
  */
 ```
-[Source: [Wikipedia: Doxygen](https://en.wikipedia.org/wiki/Doxygen)]
+[Source: [Wikipedia: Doxygen](https://en.wikipedia.org/wiki/Doxygen)]  
 The main benefit of doxygen is, that the documentatiion can be written directly in the sourcode it self and thus is easy to keep up to date. It can also automatically generate the visualization from relations between classes, object, inheritance and other dependencys.
 
 Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  Output-Files.
@@ -101,7 +101,7 @@ This is necessary because Jekyll considers Directories that start with underscor
 
 There's a usefull extension for VSCode, called: [Doxygen Documentation Generator](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen).
 
-You can personalize the apperance of the Comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -> Edit in settings.json
+You can personalize the apperance of the Comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -> Edit in settings.json  
 It looks something like this:
 
 >   "doxdocgen.generic.returnTemplate": "@return {type} - ",  
