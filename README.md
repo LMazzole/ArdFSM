@@ -123,7 +123,9 @@ It looks something like this:
 
 
 
+## License
 
+MIT License
 
 
 
