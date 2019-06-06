@@ -32,7 +32,7 @@ View the GitHub-Page for the [source-code documentation](https://lmazzole.github
 
 # Documentation with Doxygen
 ## What is Doxygen?
-Doxygen is [Open-Source](https://github.com/doxygen/doxygen) documentation generator. It extracts sourcecode-documentation directly from annoted Code. Doxygen supports a lot of popular programmin languages such as C++, C , Java, Python, etc.
+Doxygen is a [Open-Source](https://github.com/doxygen/doxygen) documentation generator. It extracts source code documentation directly from the annotated code. Doxygen supports a lot of popular programming languages such as C++, C , Java, Python, etc.
 
 For Doxygen to detect the documentation, special comments are needed. One example is shown below, but there are many more possible variants as shown in the [Doxygen Documentation](http://www.doxygen.nl/manual/docblocks.html).
 ```
@@ -48,14 +48,14 @@ For Doxygen to detect the documentation, special comments are needed. One exampl
  */
 ```
 [Source: [Wikipedia: Doxygen](https://en.wikipedia.org/wiki/Doxygen)]  
-The main benefit of doxygen is, that the documentatiion can be written directly in the sourcode it self and thus is easy to keep up to date. It can also automatically generate the visualization from relations between classes, object, inheritance and other dependencys.
+The main benefit of doxygen is, that the documentation can be written directly in the source code itself and is therefore easy to keep up to date. It can also automatically generate the visualization from relations between classes, objects, inheritance and other dependencies.
 
 Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  Output-Files.
 
-If you need more Information about Doxygen-Comments check out: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
+If you need more information about Doxygen-Comments check out: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
 
 ### HowTo install Doxygen 
-Detailed instructions how to install Doxygen can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
+Detailed instructions on how to install Doxygen can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
 1. Download a binary distribution at [Doxygen Download](http://www.doxygen.nl/download.html) 
 2. Select "Full Installation" (default option) 
 3. Add "c:/doxygen/bin" (or whatever path was used during the installation) to the System PATH   variable to run "doxygen" without providing the full path to the binary.  
@@ -63,7 +63,7 @@ Detailed instructions how to install Doxygen can be found in the [Doxygen Instal
 [Source: [PALISADE](https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows) ]
 
 ### HowTo install .dot and graphix
-If you like to draw class diagrams, collaboration  diagrams,overall class hierarchy and dependency graphs you need to install the GraphViz package.
+If you like to draw class diagrams, collaboration diagrams, overall class hierarchy and dependency graphs you need to install the GraphViz package.
 You can download a stable Windows release on the [Graphviz Website](<https://graphviz.gitlab.io/_pages/Download/Download_windows.html>).
 
 1. Download the installer for Windows
@@ -72,8 +72,8 @@ You can download a stable Windows release on the [Graphviz Website](<https://gra
  >dot.exe
 
 4. Exit the command window.
-5. Go to the **Control Panel →  System and Security → System**, and on the right side navigation panel, you will see the link Advanced systems settings.
-6. Once there in advance settings, a dialogue box will open which will show the button Environment Variables. Click on the button Environment Variables.
+5. Go to the **Control Panel →  System and Security → System**, and on the navigation panel on the right side, you will see the link Advanced systems settings.
+6. Once in advanced systems settings, a dialogue box will open and show the button Environment Variables. Click on the button Environment Variables.
 7. Select the entry "Path" on the system variables section and add C:\Program Files (x86)\Graphviz **X.XX** \bin to the existing path.
 
 [Source: [Atlassin-How to install Graphviz(Windows,Mac,Linux)](<https://bobswift.atlassian.net/wiki/spaces/GVIZ/pages/20971549/How+to+install+Graphviz+software>), [Generating a callgraph in Doxygen](<https://romanegloo.wordpress.com/2012/03/29/generating-a-callgraph-by-using-doxygen-and-graphviz-13/>)]
@@ -81,27 +81,27 @@ You can download a stable Windows release on the [Graphviz Website](<https://gra
 ### HowTo run Doxygen
 
 1. Start doxywizard (Desktop App) 
-2. Click on File->Open and choose Doxyfile in the Folder doxygen 
-3. In Doxywizard switch to the Tab Run and Click on Run doxygen
-4. When Doxygen has finished click on Show HTML output.  
+2. Click on File->Open and choose Doxyfile in the folder doxygen 
+3. In doxywizard switch to the Tab Run and click on Run doxygen
+4. When Doxygen has finished, click on Show HTML output.  
 
-If you like to generate Diagrams make sure, that in the Tab Wizard/Diagrams the Button "Use dot tool from GraphViz package" is activated.
+If you like to generate diagrams make sure, that in the Tab Wizard/Diagrams the button "Use dot tool from GraphViz package" is activated.
 
 You can use doxygen also only in console. Check the [Doxygen-Documentation](http://www.doxygen.nl/manual/index.html) if you need to know more.
 
 ### Doxygen and GitHub-Pages
 1. Generate your doxyfile direct into ./docs.  
 2. You need to add an .nojekll file in ./docs.  
-This is necessary because Jekyll considers Directories that start with underscores to be special resources and does not copy them to the final site. [Source: [Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)]
+This is necessary because Jekyll considers directories that start with underscores to be special resources and does not copy them to the final site. [Source: [Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)]
 
 3. Under Settings -> GitHub Pages -> Source choose master branche ./docs folder.
 4. Save
 
 ### Doxygen and  VSCode
 
-There's a usefull extension for VSCode, called: [Doxygen Documentation Generator](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen).
+There's a useful extension for VSCode, called: [Doxygen Documentation Generator](https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen).
 
-You can personalize the apperance of the Comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -> Edit in settings.json  
+You can personalize the apperance of the comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -> Edit in settings.json  
 It looks something like this:
 
 >   "doxdocgen.generic.returnTemplate": "@return {type} - ",  
