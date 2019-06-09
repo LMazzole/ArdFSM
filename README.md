@@ -60,11 +60,13 @@ Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  Output-Files.
 
 If you need more information about Doxygen-Comments check out: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
 
-### HowTo install Doxygen 
+### HowTo install Doxygen for Windows
 Detailed instructions on how to install Doxygen can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
-1. Download a binary distribution at [Doxygen Download](http://www.doxygen.nl/download.html) 
+1. Download a binary distribution at [Doxygen Download](http://www.doxygen.nl/download.html). It's called something like "doxygen-**X.X.XX**-setup.exe"  
 2. Select "Full Installation" (default option) 
-3. Add "c:/doxygen/bin" (or whatever path was used during the installation) to the System PATH   variable to run "doxygen" without providing the full path to the binary.  
+3. Go to the **Control Panel →  System and Security → System**, and on the navigation panel on the right side, you will see the link Advanced systems settings.
+4. Once in advanced systems settings, a dialogue box will open and show the button Environment Variables. Click on the button Environment Variables.
+5. Add "c:/doxygen/bin" (or whatever path was used during the installation) to the System PATH variable to run "doxygen" without providing the full path to the binary.  
 
 [Source: [PALISADE](https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows) ]
 
@@ -74,7 +76,7 @@ Detailed instructions on how to install Doxygen can be found in the [Doxygen Ins
 If you like to draw class diagrams, collaboration diagrams, overall class hierarchy and dependency graphs you need to install the GraphViz package.
 You can download a stable Windows release on the [Graphviz Website](<https://graphviz.gitlab.io/_pages/Download/Download_windows.html>).
 
-1. Download the installer for Windows
+1. Download the installer for Windows (graphviz-**X.XX**.msi)
 2. The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: Graphviz**X.XX** → Graphviz2.38)
 3. Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below command:
  >dot.exe
