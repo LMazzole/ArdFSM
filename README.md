@@ -3,32 +3,38 @@
 This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested in C++.  
 It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine) and an example by R.Bonderer (HSR) from *Embedded Software Engineering*.
 
-<img src="./doxygen/images/DoorCtrl.png" height="400" />
+<p align="center"><img src="./doxygen/images/DoorCtrl.png" height="400" /></p>
 
 ## Table of Content
 <!-- TOC Generated with https://magnetikonline.github.io/markdown-toc-generate/ -->
 
-- [Documentation](#documentation)
-   - [Software](#software)
-      - [Dependency Graph](#dependency-graph)
-      - [Collaboration Diagram](#collaboration-diagram)
-- [Documentation with Doxygen](#documentation-with-doxygen)
-   - [What is Doxygen?](#what-is-doxygen)
-      - [HowTo install Doxygen](#howto-install-doxygen)
-      - [HowTo install .dot and graphix](#howto-install-dot-and-graphix)
-      - [HowTo run Doxygen](#howto-run-doxygen)
-      - [Doxygen and GitHub-Pages](#doxygen-and-github-pages)
-      - [Doxygen and  VSCode](#doxygen-and--vscode)
+[TOC]
+
+<div style="page-break-after: always;"></div>
 
 # Documentation
 ## Software
 View the GitHub-Page for the [source-code documentation](https://lmazzole.github.io/ArdFSM/)
 
 ### Dependency Graph
-<img src="./docs/main_8cpp__incl.png" height="350" />
+
+<p align="center">
+    <a href=https://lmazzole.github.io/ArdFSM/main_8cpp.html>
+        <img src="./docs/main_8cpp__incl.png" height="350" style="border:none;"/>
+    </a>
+    <p align="center"><small>Click on image to open doxygen-documentation.</p>
+</p>
+
 
 ### Collaboration Diagram
-<img src="./docs/class_door_ctrl__coll__graph.png" height="200" />
+
+<p align="center">
+    <a href=https://lmazzole.github.io/ArdFSM/class_door_ctrl.html>
+        <img src="./docs/class_door_ctrl__coll__graph.png" height="200"  style="border:none;"/>
+    </a>
+    <p align="center"><small>Click on image to open doxygen-documentation.</p>
+</p>
+
 
 # Documentation with Doxygen
 ## What is Doxygen?
@@ -62,12 +68,14 @@ Detailed instructions on how to install Doxygen can be found in the [Doxygen Ins
 
 [Source: [PALISADE](https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows) ]
 
+<div style="page-break-after: always;"></div>
+
 ### HowTo install .dot and graphix
 If you like to draw class diagrams, collaboration diagrams, overall class hierarchy and dependency graphs you need to install the GraphViz package.
 You can download a stable Windows release on the [Graphviz Website](<https://graphviz.gitlab.io/_pages/Download/Download_windows.html>).
 
 1. Download the installer for Windows
-2. The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: GraphvizX.XX → Graphviz2.38)
+2. The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: Graphviz**X.XX** → Graphviz2.38)
 3. Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below command:
  >dot.exe
 
@@ -91,11 +99,15 @@ You can use doxygen also only in console. Check the [Doxygen-Documentation](http
 
 ### Doxygen and GitHub-Pages
 1. Generate your doxyfile direct into ./docs.  
+
 2. You need to add an .nojekll file in ./docs.  
 This is necessary because Jekyll considers directories that start with underscores to be special resources and does not copy them to the final site. [Source: [Bypassing Jekyll on GitHub Pages](https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/)]
 
 3. Under Settings -> GitHub Pages -> Source choose master branche ./docs folder.
+
 4. Save
+
+   <div style="page-break-after: always;"></div>
 
 ### Doxygen and  VSCode
 
@@ -121,9 +133,15 @@ It looks something like this:
 > ​       "custom"  
 > ​    ],  
 
+# Contributors
 
+- [Luca Mazzoleni](https://github.com/LMazzole)
 
-## License
+# Changelog
+
+V 1.0	-	Release BA FS19	-	[Luca Mazzoleni](https://github.com/LMazzole)
+
+# License
 
 MIT License
 
