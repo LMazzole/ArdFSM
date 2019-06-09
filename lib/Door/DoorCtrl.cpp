@@ -1,6 +1,6 @@
 /**
  * @file DoorCtrl.cpp
- * @brief Implementation of the Door Controll-Class
+ * @brief Implementation of the Door Control-Class
  * 
  * @author Luca Mazzoleni (luca.mazzoleni@hsr.ch)
  * 

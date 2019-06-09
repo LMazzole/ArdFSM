@@ -50,9 +50,9 @@ class Door {
 
     //=====PRIVATE====================================================================================
    private:
-    const int pPosClosed;
-    const int pPosOpen;
-    int pActualPos = 3;  //door initialised somwhere between
+    const int pPosClosed;  ///< Position of the closed door
+    const int pPosOpen;    ///< Position of the open door
+    int pActualPos = 3;    ///< Initial door position somwhere between
 
     /**
      * @brief Initialisen the Door in closed Position

@@ -91,43 +91,128 @@ $(document).ready(function(){initNavTree('md__v_1__git__ard_f_s_m__r_e_a_d_m_e.h
 <div class="contents">
 <div class="textblock"><p>This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested in C++.</p>
 <p>It's based on this Wiki-Article: <a href="https://en.wikipedia.org/wiki/Finite-state_machine">Finite-state_machine</a> and an example by R.Bonderer (HSR) from <em>Embedded Software Engineering</em>.</p>
-<img src="./doxygen/Fsm_Moore_model_door_control.png" height="400" alt="" class="inline"/>
-<h2>Documentation with Doxygen</h2>
+<img src="./doxygen/images/DoorCtrl.png" height="400" alt="" class="inline"/>
+<h2>Table of Content</h2>
+<div style="page-break-after: always;"></div><h1>Documentation</h1>
+<h2>Software</h2>
 <p>View the GitHub-Page for the <a href="https://lmazzole.github.io/ArdFSM/">source-code documentation</a></p>
-<h3>What is Doxygen?</h3>
-<p>Doxygen is <a href="https://github.com/doxygen/doxygen">Open-Source</a> documentation generator. It extracts sourcecode-documentation directly from annoted Code. Doxygen supports a lot of popular programmin languages such as C++, C , Java, Python, etc.</p>
-<p>For Doxygen to detect the documentation, special comments are neede. one Example is shown below, but there are many more possible variants as shown <a href="http://www.doxygen.nl/manual/docblocks.html">here</a>. </p><div class="fragment"><div class="line">/**</div><div class="line"> * @brief A short one line description</div><div class="line"> *</div><div class="line"> * &lt;Longer description&gt;</div><div class="line"> * &lt;May span multiple lines or paragraphs as needed&gt;</div><div class="line"> *</div><div class="line"> * @param  Description of method&#39;s or function&#39;s input parameter</div><div class="line"> * @param  ...</div><div class="line"> * @return Description of the return value</div><div class="line"> */</div></div><!-- fragment --><p> The main benefit of doxygen is, that the documentatiion can be written directly in the sourcode it's self and thus is easy to keep up to date.</p>
-<h3>HowTo Install Doxygen for Code-documentation</h3>
-<p>Detailed instructions how to install Doxygen can be found in the <a href="http://www.doxygen.nl/manual/install.html">Doxygen Installation manual</a>.</p><ol type="1">
-<li>Download a binary distribution at <a href="http://www.doxygen.nl/download.html">Doxygen Download</a></li>
+<h3>Dependency Graph</h3>
+<p><a href="https://lmazzole.github.io/ArdFSM/main_8cpp.html"><img src="./docs/main_8cpp__incl.png" height="350" style="border:none;" alt="" class="inline"/>
+ </a> </p>
+<p><small>Click on image to open doxygen-documentation.</small></p>
+<p><small> </small></p>
+<p><small></small></p>
+<p><small></p><h3>Collaboration Diagram</h3>
+<p></small></p>
+<p><small></small></p>
+<p><small></small></p>
+<p><small> <a href="https://lmazzole.github.io/ArdFSM/class_door_ctrl.html"><img src="./docs/class_door_ctrl__coll__graph.png" height="200" style="border:none;" alt="" class="inline"/>
+ </a> </small></p>
+<p><small><small>Click on image to open doxygen-documentation.</small></small></p>
+<p><small><small> </small></small></p>
+<p><small><small></small></small></p>
+<p><small><small></p><h1>Documentation with Doxygen</h1>
+<p></small></small></p>
+<p><small><small> </p><h2>What is Doxygen?</h2>
+<p></small></small></p>
+<p><small><small> Doxygen is a <a href="https://github.com/doxygen/doxygen">Open-Source</a> documentation generator. It extracts source code documentation directly from the annotated code. Doxygen supports a lot of popular programming languages such as C++, C , Java, Python, etc.</small></small></p>
+<p><small><small>For Doxygen to detect the documentation, special comments are needed. One example is shown below, but there are many more possible variants as shown in the <a href="http://www.doxygen.nl/manual/docblocks.html">Doxygen Documentation</a>. </p><div class="fragment"><div class="line">/**</div><div class="line"> * @brief A short one line description</div><div class="line"> *</div><div class="line"> * &lt;Longer description&gt;</div><div class="line"> * &lt;May span multiple lines or paragraphs as needed&gt;</div><div class="line"> *</div><div class="line"> * @param  Description of method&#39;s or function&#39;s input parameter</div><div class="line"> * @param  ...</div><div class="line"> * @return Description of the return value</div><div class="line"> */</div></div><!-- fragment --><p> [Source: <a href="https://en.wikipedia.org/wiki/Doxygen">Wikipedia: Doxygen</a>]</small></small></p>
+<p><small><small>The main benefit of doxygen is, that the documentation can be written directly in the source code itself and is therefore easy to keep up to date. It can also automatically generate the visualization from relations between classes, objects, inheritance and other dependencies.</small></small></p>
+<p><small><small>Doxygen can generate HTML, LaTeX, Man pages, RTF and XML Output-Files.</small></small></p>
+<p><small><small>If you need more information about Doxygen-Comments check out: <a href="https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments">How to Write Doxygen Doc Comments</a>.</small></small></p>
+<p><small><small></p><h3>HowTo install Doxygen for Windows</h3>
+<p></small></small></p>
+<p><small><small> Detailed instructions on how to install Doxygen can be found in the <a href="http://www.doxygen.nl/manual/install.html">Doxygen Installation manual</a>.</p><ol type="1">
+<li>Download a binary distribution at <a href="http://www.doxygen.nl/download.html">Doxygen Download</a>. It's called something like "doxygen-**X.X.XX**-setup.exe"</li>
 <li>Select "Full Installation" (default option)</li>
+<li>Go to the <b>Control Panel → System and Security → System</b>, and on the navigation panel on the right side, you will see the link Advanced systems settings.</li>
+<li>Once in advanced systems settings, a dialogue box will open and show the button Environment Variables. Click on the button Environment Variables.</li>
 <li>Add "c:/doxygen/bin" (or whatever path was used during the installation) to the System PATH variable to run "doxygen" without providing the full path to the binary.</li>
 </ol>
-<p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
-<h3>How to run doxygen</h3>
-<ol type="1">
-<li>Start doxywizard (Desktop App)</li>
-<li>Click on File-&gt;Open and choose Doxyfile in the Folder doxygen</li>
-<li>In Doxywizard switch to the Tab Run and Click on Run doxygen</li>
-<li>When Doxygen has finished click on Show HTML output.</li>
+<p></small></small></p>
+<p><small><small>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</small></small></p>
+<p><small><small></p><div style="page-break-after: always;"></div><p></small></small></p>
+<p><small><small></p><h3>HowTo install .dot and graphix</h3>
+<p></small></small></p>
+<p><small><small> If you like to draw class diagrams, collaboration diagrams, overall class hierarchy and dependency graphs you need to install the GraphViz package. You can download a stable Windows release on the <a href="https://graphviz.gitlab.io/_pages/Download/Download_windows.html">Graphviz Website</a>.</small></small></p>
+<p><small><small></p><ol type="1">
+<li>Download the installer for Windows (graphviz-**X.XX**.msi)</li>
+<li>The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: Graphviz**X.XX** → Graphviz2.38)</li>
+<li>Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below command: &gt;dot.exe</li>
+<li>Exit the command window.</li>
+<li>Go to the <b>Control Panel → System and Security → System</b>, and on the navigation panel on the right side, you will see the link Advanced systems settings.</li>
+<li>Once in advanced systems settings, a dialogue box will open and show the button Environment Variables. Click on the button Environment Variables.</li>
+<li>Select the entry "Path" on the system variables section and add C:\Program Files (x86)\Graphviz <b>X.XX</b> \bin to the existing path.</li>
 </ol>
-<p>[Source: <a href="https://git.njit.edu/palisade/PALISADE/wikis/how-to-setup-doxygen-windows">PALISADE</a> ]</p>
-<h3>Doxygen and GitHub-Pages</h3>
-<ol type="1">
-<li>Generate your doxyfile direct into /docs.</li>
+<p></small></small></p>
+<p><small><small>[Source: <a href="https://bobswift.atlassian.net/wiki/spaces/GVIZ/pages/20971549/How+to+install+Graphviz+software">Atlassin-How to install Graphviz(Windows,Mac,Linux)</a>, <a href="https://romanegloo.wordpress.com/2012/03/29/generating-a-callgraph-by-using-doxygen-and-graphviz-13/">Generating a callgraph in Doxygen</a>]</small></small></p>
+<p><small><small></p><h3>HowTo run Doxygen</h3>
+<p></small></small></p>
+<p><small><small></small></small></p>
+<p><small><small></p><ol type="1">
+<li>Start doxywizard (Desktop App)</li>
+<li>Click on File-&gt;Open and choose Doxyfile in the folder doxygen</li>
+<li>In doxywizard switch to the Tab Run and click on Run doxygen</li>
+<li>When Doxygen has finished, click on Show HTML output.</li>
+</ol>
+<p></small></small></p>
+<p><small><small>If you like to generate diagrams make sure, that in the Tab Wizard/Diagrams the button "Use dot tool from GraphViz package" is activated.</small></small></p>
+<p><small><small>You can use doxygen also only in console. Check the <a href="http://www.doxygen.nl/manual/index.html">Doxygen-Documentation</a> if you need to know more.</small></small></p>
+<p><small><small></p><h3>Doxygen and GitHub-Pages</h3>
+<p></small></small></p>
+<p><small><small></p><ol type="1">
+<li>Generate your doxyfile direct into ./docs.</li>
 <li>You need to add an .nojekll file in ./docs.</li>
 </ol>
-<p>This is necessary because Jekyll considers Directories that start with underscores to be special resources and does not copy them to the final site. <a href="https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/">Bypassing Jekyll on GitHub Pages</a></p>
-<ol type="1">
-<li>Under Settings -&gt; GitHub Pages -&gt; Source choose master branche /docs folder.</li>
-<li>Save</li>
+<p></small></small></p>
+<p><small><small>This is necessary because Jekyll considers directories that start with underscores to be special resources and does not copy them to the final site. [Source: <a href="https://github.blog/2009-12-29-bypassing-jekyll-on-github-pages/">Bypassing Jekyll on GitHub Pages</a>]</small></small></p>
+<p><small><small></p><ol type="1">
+<li>Under Settings -&gt; GitHub Pages -&gt; Source choose master branche ./docs folder.</li>
+<li><p class="startli">Save</p>
+<div style="page-break-after: always;"></div></li>
 </ol>
-<h2>Usefull tips</h2>
-<h3>Extension for VSCode</h3>
-<p><a href="https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen">Doxygen Documentation Generator</a></p>
-<p>Change the order in config-options. It's important that "author" appears befor "brief" because of an parse error in doxygen.</p>
-<h3>How to Write Doxygen Doc Comments</h3>
-<p><a href="https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments">How to Write Doxygen Doc Comments</a> </p>
+<p></small></small></p>
+<p><small><small></p><h3>Doxygen and VSCode</h3>
+<p></small></small></p>
+<p><small><small></small></small></p>
+<p><small><small>There's a useful extension for VSCode, called: <a href="https://marketplace.visualstudio.com/items?itemName=cschlosser.doxdocgen">Doxygen Documentation Generator</a>.</small></small></p>
+<p><small><small>You can personalize the apperance of the comments in the config-options: Manage/Settings/User/Extensions/Doxygen Documentation Generator Settings -&gt; Edit in settings.json</small></small></p>
+<p><small><small>It looks something like this:</small></small></p>
+<p><small><small></p><blockquote class="doxtable">
+<p>"doxdocgen.generic.returnTemplate": "@return {type} - ",</p>
+<p>​ "doxdocgen.generic.paramTemplate": "@param {param} - ",</p>
+<p>​ "doxdocgen.file.versionTag": "@version 1.0 - Description - {author} - {date}",</p>
+<p>​ "doxdocgen.file.fileOrder": [</p>
+<p>​ "file",</p>
+<p>​ "brief",</p>
+<p>​ "empty",</p>
+<p>​ "author",</p>
+<p>​ "empty",</p>
+<p>​ "version",</p>
+<p>​ "empty",</p>
+<p>​ "date",</p>
+<p>​ "copyright",</p>
+<p>​ "empty",</p>
+<p>​ "custom"</p>
+<p>​ ],</p>
+<p></p>
+</blockquote>
+<p></small></small></p>
+<p><small><small></p><h1>Contributors</h1>
+<p></small></small></p>
+<p><small><small></small></small></p>
+<p><small><small></p><ul>
+<li><a href="https://github.com/LMazzole">Luca Mazzoleni</a></li>
+</ul>
+<p></small></small></p>
+<p><small><small></p><h1>Changelog</h1>
+<p></small></small></p>
+<p><small><small></small></small></p>
+<p><small><small>V 1.0 - Release BA FS19 - <a href="https://github.com/LMazzole">Luca Mazzoleni</a></small></small></p>
+<p><small><small></p><h1>License</h1>
+<p></small></small></p>
+<p><small><small></small></small></p>
+<p><small><small>MIT License </small></small></p>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->

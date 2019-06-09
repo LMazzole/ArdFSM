@@ -17,7 +17,7 @@ Door::Door(int positionClosed, int positionOpen) : pPosClosed(positionClosed), p
 }
 
 /**
- * @bug Example for an bug
+ * @bug Example how do document a bug in doxygen
  */
 bool Door::open() {
     DBFUNCCALLln("Door::open()");
