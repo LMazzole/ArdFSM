@@ -1,14 +1,28 @@
 # Arduino FSM
 
-This Repo provides an Example how to write a Finite-state machine (FSM) which can be nested in C++.  
-It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine) and an example by R.Bonderer (HSR) from *Embedded Software Engineering*.
+This repository provides an example how to write a Finite-state machine (FSM) which can be nested in C++.  
+It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine) and an example by R. Bonderer (HSR) from *Embedded Software Engineering*.
 
 <p align="center"><img src="./doxygen/images/DoorCtrl.png" height="400" /></p>
 
-## Table of Content
+## Table of contents
 <!-- TOC Generated with https://magnetikonline.github.io/markdown-toc-generate/ -->
 
-[TOC]
+- [Documentation](#documentation)
+	- [Software](#software)
+		- [Dependency graph](#dependency-graph)
+		- [Collaboration diagram](#collaboration-diagram)
+- [Documentation with Doxygen](#documentation-with-doxygen)
+	- [What is Doxygen?](#what-is-doxygen)
+		- [HowTo install Doxygen for Windows](#howto-install-doxygen-for-windows)
+		- [HowTo install .dot and graphviz](#howto-install-dot-and-graphviz)
+		- [HowTo run Doxygen](#howto-run-doxygen)
+		- [Doxygen and GitHub-Pages](#doxygen-and-github-pages)
+		- [Doxygen and  VSCode](#doxygen-and--vscode)
+- [Contributors](#contributors)
+- [Changelog](#changelog)
+- [License](#license)
+
 
 <div style="page-break-after: always;"></div>
 
@@ -16,7 +30,7 @@ It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org
 ## Software
 View the GitHub-Page for the [source-code documentation](https://lmazzole.github.io/ArdFSM/)
 
-### Dependency Graph
+### Dependency graph
 
 <p align="center">
     <a href=https://lmazzole.github.io/ArdFSM/main_8cpp.html>
@@ -26,7 +40,7 @@ View the GitHub-Page for the [source-code documentation](https://lmazzole.github
 </p>
 
 
-### Collaboration Diagram
+### Collaboration diagram
 
 <p align="center">
     <a href=https://lmazzole.github.io/ArdFSM/class_door_ctrl.html>
@@ -58,7 +72,7 @@ The main benefit of doxygen is, that the documentation can be written directly i
 
 Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  Output-Files.
 
-If you need more information about Doxygen-Comments check out: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
+If you need more information about Doxygen-Comments please refer to: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
 
 ### HowTo install Doxygen for Windows
 Detailed instructions on how to install Doxygen can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
@@ -72,13 +86,13 @@ Detailed instructions on how to install Doxygen can be found in the [Doxygen Ins
 
 <div style="page-break-after: always;"></div>
 
-### HowTo install .dot and graphix
+### HowTo install .dot and graphviz
 If you like to draw class diagrams, collaboration diagrams, overall class hierarchy and dependency graphs you need to install the GraphViz package.
 You can download a stable Windows release on the [Graphviz Website](<https://graphviz.gitlab.io/_pages/Download/Download_windows.html>).
 
 1. Download the installer for Windows (graphviz-**X.XX**.msi)
 2. The default installation path will be C:\Program Files (x86)\GraphvizX.XX\bin (Example: Graphviz**X.XX** → Graphviz2.38)
-3. Open cmd window as administrator and go the location C:\Program Files (x86)\GraphvizX.XX\bin and run the below command:
+3. Open cmd window as administrator and go the location C:\Program Files (x86)\Graphviz**X.XX**\bin and run the below command:
  >dot.exe
 
 4. Exit the command window.
