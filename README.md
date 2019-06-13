@@ -1,6 +1,6 @@
 # Arduino FSM
 
-This repository provides an example how to write a Finite-state machine (FSM) which can be nested in C++.  
+This repository provides an example how to write a Finite-State-Machine (FSM) which can be nested in C++.  
 It's based on this Wiki-Article: [Finite-state_machine](https://en.wikipedia.org/wiki/Finite-state_machine) and an example by R. Bonderer (HSR) from *Embedded Software Engineering*.
 
 <p align="center"><img src="./doxygen/images/DoorCtrl.png" height="400" /></p>
@@ -52,9 +52,9 @@ View the GitHub-Page for the [source-code documentation](https://lmazzole.github
 
 # Documentation with Doxygen
 ## What is Doxygen?
-Doxygen is a [Open-Source](https://github.com/doxygen/doxygen) documentation generator. It extracts source code documentation directly from the annotated code. Doxygen supports a lot of popular programming languages such as C++, C , Java, Python, etc.
+*Doxygen* is a [Open-Source](https://github.com/doxygen/doxygen) documentation generator. It extracts source code documentation directly from the annotated code. *Doxygen* supports a lot of popular programming languages such as C++, C , Java, Python, etc.
 
-For Doxygen to detect the documentation, special comments are needed. One example is shown below, but there are many more possible variants as shown in the [Doxygen Documentation](http://www.doxygen.nl/manual/docblocks.html).
+For *Doxygen* to detect the documentation, special comments are needed. One example is shown below, but there are many more possible variants as shown in the [Doxygen Documentation](http://www.doxygen.nl/manual/docblocks.html).
 ```
 /**
  * @brief A short one line description
@@ -70,12 +70,12 @@ For Doxygen to detect the documentation, special comments are needed. One exampl
 [Source: [Wikipedia: Doxygen](https://en.wikipedia.org/wiki/Doxygen)]  
 The main benefit of doxygen is, that the documentation can be written directly in the source code itself and is therefore easy to keep up to date. It can also automatically generate the visualization from relations between classes, objects, inheritance and other dependencies.
 
-Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  Output-Files.
+Doxygen can generate HTML, LaTeX, Man pages, RTF and XML  output-files.
 
-If you need more information about Doxygen-Comments please refer to: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
+If you need more information about *Doxygen*-comments please refer to: [How to Write Doxygen Doc Comments](https://github.com/stan-dev/stan/wiki/How-to-Write-Doxygen-Doc-Comments).
 
 ### HowTo install Doxygen for Windows
-Detailed instructions on how to install Doxygen can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
+Detailed instructions on how to install *Doxygen* can be found in the [Doxygen Installation manual](http://www.doxygen.nl/manual/install.html). 
 1. Download a binary distribution at [Doxygen Download](http://www.doxygen.nl/download.html). It's called something like "doxygen-**X.X.XX**-setup.exe"  
 2. Select "Full Installation" (default option) 
 3. Go to the **Control Panel →  System and Security → System**, and on the navigation panel on the right side, you will see the link Advanced systems settings.
